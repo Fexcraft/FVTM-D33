@@ -46,9 +46,8 @@
 # Program: door_rr_int d33:atrot e34_doors_br true 0 60 1 81.93 0 -18.46 0 1 0
 # Program: door_rr_plastic2 d33:atrot e34_doors_br true 0 60 1 81.93 0 -18.46 0 1 0
 
-# Transform: rotation 0 0 1 180
-# Transform: rotation 0 1 0 90
-# Transform: scale 0.2
+# Transform: scale 0.0625
+# Transform: scale 0.25
 # Transform: rescale_normal
 
 # Program: door_lf_col fvtm:rgb_primary
