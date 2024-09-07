@@ -1,0 +1,88 @@
+{ 
+    "Addon": "d33rolls", 
+    "Name": "Rolls-Royce Cullinan", 
+    "Model": "main_col;mirrors;podsteer;povor;inter;backseat;dver_cr;lamp;dno;kuz_bl;kuz_cr;farz;farp;reshet;ruk;statue;zercalo;logo_hud;logo_trunk;lamp_r;lamp_l;d33rolls:textures/model/cullinan.obj", 
+    "CreativeTab": "d33lib:vehicles", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 2480
+        }
+    }, 
+    "Category": "car, crossover", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ -0.75, 0.3125, -1.6875 ], 
+            "powered": true
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ 0.75, 0.3125, -1.6875 ], 
+            "mirror": true, 
+            "powered": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ -0.75, 0.3125, 2.0125 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ 0.75, 0.3125, 2.0125 ], 
+            "mirror": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -0.6875, 
+            0.1875, 
+            -0.875, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -0.6875, 
+            0.1875, 
+            0.875, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            0.6875, 
+            0.1875, 
+            -0.875, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            0.6875, 
+            0.1875, 
+            0.875, 
+            "right_front"
+        ]
+    }, 
+    "ID": "cullinan", 
+    "ColorChannels": { 
+        "primary": "#6B1313", 
+        "secondary": "#C2C2C2"
+    }, 
+    "InstalledParts": { 
+        "vehicle:seats": "d33rolls:cullinan_seats", 
+        "right_front_wheel": "d33rolls:cull_wheel", 
+        "left_front_wheel": "d33rolls:cull_wheel", 
+        "right_back_wheel": "d33rolls:cull_wheel", 
+        "left_back_wheel": "d33rolls:cull_wheel", 
+        "vehicle:steering_wheel": "d33rolls:cullinan_steer", 
+        "vehicle:engine": "gep:engine_petrol", 
+        "vehicle:transmission": "gep:transmission"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 2.33, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }, 
+    "PartSlots": { 
+        "seats": {}, 
+        "steering_wheel": {}
+    }
+}

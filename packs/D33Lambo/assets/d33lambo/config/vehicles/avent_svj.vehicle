@@ -1,0 +1,94 @@
+{ 
+    "Addon": "d33lambo", 
+    "Name": "Lamborghini Aventador SVJ", 
+    "Model": "interior;glass_r_bl;glass_l_bl;glass_fro_bl;glass_r_gl;glass_l_gl;glass_fro_gl;body_col;exhaust_ext;chassis_ext;body_ext;body_svj;d33lambo:textures/model/aventador_svj.obj", 
+    "CreativeTab": "d33lib:vehicles", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1500
+        }
+    }, 
+    "Category": "car,coupe", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ -0.8625, 0.40625, -1.65625 ]
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ 0.8625, 0.40625, -1.65625 ], 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ -0.925, 0.40625, 1.75 ], 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ 0.925, 0.40625, 1.75 ], 
+            "mirror": true, 
+            "powered": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -0.6875, 
+            0.125, 
+            -0.875, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -0.6875, 
+            0.125, 
+            0.875, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            0.6875, 
+            0.125, 
+            -0.875, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            0.6875, 
+            0.125, 
+            0.875, 
+            "right_front"
+        ]
+    }, 
+    "ID": "avent_svj", 
+    "ColorChannels": { 
+        "primary": "#734E39", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:seats": "d33lambo:asvj_seats", 
+        "right_front_wheel": "d33lambo:svjb_wheel", 
+        "left_front_wheel": "d33lambo:svjb_wheel", 
+        "right_back_wheel": "d33lambo:svjb_wheel", 
+        "left_back_wheel": "d33lambo:svjb_wheel", 
+        "vehicle:steering_wheel": "d33lambo:asvj_steer", 
+        "vehicle:bumper_front": "d33lambo:asvj_bumf", 
+        "vehicle:bumper_rear": "d33lambo:asvj_bumr", 
+        "vehicle:hood": "d33lambo:asvj_hood", 
+        "vehicle:lights": "d33lambo:asvj_lights", 
+        "vehicle:trunk": "d33lambo:asvj_trunk", 
+        "vehicle:doors": "d33lambo:asvj_doors", 
+        "vehicle:engine": "gep:engine_petrol", 
+        "vehicle:transmission": "gep:transmission"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 3.26, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }, 
+    "PartSlots": { 
+        "seats": {}, 
+        "steering_wheel": {}
+    }
+}

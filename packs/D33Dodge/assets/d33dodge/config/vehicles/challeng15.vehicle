@@ -1,0 +1,102 @@
+{ 
+    "Addon": "d33dodge", 
+    "Name": "Dodge Challenger III", 
+    "Model": "LOD_B_BODY_mm_col;LOD_B_BODY_mm_ext;LOD_B_CHASSIS_mm_ext;LOD_B_EXHAUST_mm_ext;LOD_B_INTERIOR_mm_ext;LOD_B_INTERIOR_mm_cab;LOD_B_GLASS_FRONT_mm_windowsb;LOD_B_GLASS_REAR_mm_windowsb;LOD_B_GLASS_mm_windows;d33dodge:textures/model/challenger.obj", 
+    "CreativeTab": "d33lib:vehicles", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 2000
+        }, 
+        "ch15_sunroof": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "driver"
+            ]
+        }
+    }, 
+    "Category": "car,coupe", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ -0.6875, 0.375, -1.8125 ], 
+            "powered": true
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ 0.6875, 0.375, -1.8125 ], 
+            "mirror": true, 
+            "powered": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ -0.6875, 0.375, 1.5125 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ 0.6875, 0.375, 1.5125 ], 
+            "mirror": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -0.6875, 
+            0.25, 
+            -0.875, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -0.6875, 
+            0.25, 
+            0.875, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            0.6875, 
+            0.25, 
+            -0.875, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            0.6875, 
+            0.25, 
+            0.875, 
+            "right_front"
+        ]
+    }, 
+    "ID": "challeng15", 
+    "ColorChannels": { 
+        "primary": "#0080D0", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:seats": "d33dodge:ch15_seats", 
+        "right_front_wheel": "d33dodge:chall_wheel", 
+        "left_front_wheel": "d33dodge:chall_wheel", 
+        "right_back_wheel": "d33dodge:chall_wheel", 
+        "left_back_wheel": "d33dodge:chall_wheel", 
+        "vehicle:steering_wheel": "d33dodge:ch15_steer", 
+        "vehicle:bumper_front": "d33dodge:ch15_bumf", 
+        "vehicle:bumper_rear": "d33dodge:ch15_bumr", 
+        "vehicle:hood": "d33dodge:ch15_hood", 
+        "vehicle:lights": "d33dodge:ch15_lights", 
+        "vehicle:trunk": "d33dodge:ch15_trunk", 
+        "vehicle:doors": "d33dodge:ch15_doors", 
+        "vehicle:engine": "gep:engine_petrol", 
+        "vehicle:transmission": "gep:transmission"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 3.04, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }, 
+    "PartSlots": { 
+        "seats": {}, 
+        "steering_wheel": {}
+    }
+}

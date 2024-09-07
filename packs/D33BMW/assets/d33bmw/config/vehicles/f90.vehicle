@@ -1,0 +1,125 @@
+{ 
+    "Addon": "d33bmw", 
+    "Name": "BMW M5 F90", 
+    "Model": "body;doorrf_zerc;carbone;gluh;stop;int;reaglb;bl;plast;doorrr_bl;doorlr_bl;reshrad;dno;zashit;black;windscreb;m5;eng;d33bmw:textures/model/bmwm5f90.obj", 
+    "Texture": "Default;fvp:textures/cars/c10.png", 
+    "CreativeTab": "d33lib:vehicles", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1900
+        }, 
+        "f90_trunk": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "driver"
+            ]
+        }
+    }, 
+    "Category": "car,sedan", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ -0.825, 0.3625, -2.0 ]
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ 0.825, 0.3625, -2.0 ], 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ -0.825, 0.3625, 1.7 ], 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ 0.825, 0.3625, 1.7 ], 
+            "mirror": true, 
+            "powered": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -0.6875, 
+            0.1875, 
+            -0.875, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -0.6875, 
+            0.1875, 
+            0.875, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            0.6875, 
+            0.1875, 
+            -0.875, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            0.6875, 
+            0.1875, 
+            0.875, 
+            "right_front"
+        ]
+    }, 
+    "PartSlots": { 
+        "engine": [ 
+            -0.0, 
+            0.398125, 
+            -1.56875, 
+            "engine"
+        ], 
+        "steering_wheel": {}, 
+        "seats": {}
+    }, 
+    "SwivelPoints": { 
+        "f90_trunk": { 
+            "parent": "vehicle", 
+            "pos": [ -0.0, -1.30625, 2.2 ], 
+            "movers": [ 
+                { 
+                    "attribute": "f90_trunk", 
+                    "var": "pitch", 
+                    "speed": 3, 
+                    "bool_based": true, 
+                    "min": 0, 
+                    "max": 60
+                }
+            ]
+        }
+    }, 
+    "ID": "m5f90", 
+    "ColorChannels": { 
+        "primary": "#212C2F", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:seats": "d33bmw:m5f90_seats", 
+        "right_front_wheel": "d33bmw:f90_wheel", 
+        "left_front_wheel": "d33bmw:f90_wheel", 
+        "right_back_wheel": "d33bmw:f90_wheel", 
+        "left_back_wheel": "d33bmw:f90_wheel", 
+        "vehicle:s:vehicle_partslots:steering_wheel:1": "d33bmw:f90_steer", 
+        "vehicle:bumper_front": "d33bmw:f90_bumf", 
+        "vehicle:bumper_rear": "d33bmw:f90_bumr", 
+        "vehicle:doors": "d33bmw:f90_doors", 
+        "vehicle:hood": "d33bmw:f90_hood", 
+        "vehicle:lights": "d33bmw:f90_lights", 
+        "vehicle:trunk": "d33bmw:f90_trunk", 
+        "vehicle:s:vehicle_partslots:engine:0": "d33lib:engine_s63", 
+        "vehicle:transmission": "gep:transmission"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 2.84, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }
+}

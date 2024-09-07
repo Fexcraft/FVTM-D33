@@ -1,0 +1,94 @@
+{ 
+    "Addon": "d33ford", 
+    "Name": "Ford Mustang GT 15", 
+    "Model": "exhaust_ext;chassis_ext;body_ext;body_col;glass_f_bl;glass_lq_bl;glass_r_bl;glass_rq_bl;inter_int;d33ford:textures/model/mustang15.obj", 
+    "CreativeTab": "d33lib:vehicles", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 2000
+        }
+    }, 
+    "Category": "car, coupe", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ -0.7625, 0.3875, -1.725 ]
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ 0.7625, 0.3875, -1.725 ], 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ -0.7625, 0.3875, 1.4125 ], 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ 0.7625, 0.3875, 1.4125 ], 
+            "mirror": true, 
+            "powered": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -0.6875, 
+            0.25, 
+            -0.625, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -0.6875, 
+            0.25, 
+            1.0, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            0.6875, 
+            0.25, 
+            -0.625, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            0.6875, 
+            0.25, 
+            1.0, 
+            "right_front"
+        ]
+    }, 
+    "ID": "mustang15", 
+    "ColorChannels": { 
+        "primary": "#bf3326", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:seats": "d33ford:m15_seats", 
+        "right_front_wheel": "d33ford:m15_white", 
+        "left_front_wheel": "d33ford:m15_white", 
+        "right_back_wheel": "d33ford:m15_white", 
+        "left_back_wheel": "d33ford:m15_white", 
+        "vehicle:steering_wheel": "d33ford:m15_steer", 
+        "vehicle:bumper_front": "d33ford:m15_bumf", 
+        "vehicle:bumper_rear": "d33ford:m15_bumr", 
+        "vehicle:hood": "d33ford:m15_hood", 
+        "vehicle:lights": "d33ford:m15_lights", 
+        "vehicle:trunk": "d33ford:m15_trunk", 
+        "vehicle:doors": "d33ford:m15_doors", 
+        "vehicle:engine": "gep:engine_petrol", 
+        "vehicle:transmission": "gep:transmission"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 2.7, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }, 
+    "PartSlots": { 
+        "seats": {}, 
+        "steering_wheel": {}
+    }
+}

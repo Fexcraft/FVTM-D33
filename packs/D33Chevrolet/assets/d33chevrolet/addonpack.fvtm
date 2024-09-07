@@ -1,0 +1,12 @@
+{
+  "ID": "d33chevrolet",
+  "Name": "D33 CHEVROLET",
+  "URL": "http://fexcraft.net/download?modid=addon-yourpack",
+  "License": "http://fexcraft.net/license?id=mods",
+  "Dependencies": [ "gep", "d33lib" ],
+  "Authors": [
+    "MaximD33"
+  ],
+  "Version": "1.0",
+  "CreativeTabs":[]
+}

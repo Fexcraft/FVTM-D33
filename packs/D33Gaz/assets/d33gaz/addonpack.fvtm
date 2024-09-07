@@ -1,0 +1,12 @@
+{
+  "ID": "d33gaz",
+  "Name": "D33 GAZ",
+  "URL": "https://www.curseforge.com/minecraft/mc-mods/d33-gaz-package",
+  "License": "http://fexcraft.net/license?id=mods",
+  "Dependencies": [ "gep", "d33lib" ],
+  "Authors": [
+    "MaximD33"
+  ],
+  "Version": "1.0",
+  "CreativeTabs":[]
+}

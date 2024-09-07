@@ -1,0 +1,159 @@
+{ 
+    "Addon": "d33ford", 
+    "Name": "Ford Crown Victoria", 
+    "CreativeTab": "d33lib:vehicles", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1840
+        }, 
+        "cv_trunk": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "driver"
+            ]
+        }
+    }, 
+    "Category": "car, sedan", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ -0.90625, 0.3875, -2.00625 ]
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ 0.90625, 0.3875, -2.00625 ], 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ -0.9375, 0.3875, 1.73125 ], 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ 0.9375, 0.3875, 1.73125 ], 
+            "mirror": true, 
+            "powered": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -0.6875, 
+            0.25, 
+            -0.625, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -0.6875, 
+            0.25, 
+            1.0, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            0.6875, 
+            0.25, 
+            -0.625, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            0.6875, 
+            0.25, 
+            1.0, 
+            "right_front"
+        ]
+    }, 
+    "PartSlots": { 
+        "engine": [ 
+            -0.0, 
+            0.44875, 
+            -1.518125, 
+            "engine"
+        ], 
+        "steering_wheel": {}, 
+        "search_light_left": [ 
+            -0.0, 
+            -0.0, 
+            -0.0, 
+            "search_light"
+        ], 
+        "search_light_right": [ 
+            -0.0, 
+            2.675, 
+            -0.0, 
+            "search_light", 
+            4, 
+            [ 180, 0, 0 ]
+        ], 
+        "seats": {}
+    }, 
+    "Model": "body1;wingl_col;mord_col;wingr_col;bl;reshet;dno;windscrebl;glrea_bl;motor_niz;podv_pered;podv_rea;radiator;motor_ver;inter;logo;far;wingl_in;wingr_in;motor;d33ford:textures/model/cr_victoria.obj", 
+    "ModelData": { 
+        "FlipV": true, 
+        "Transforms": [ 
+            "rotation 0 0 1 180", 
+            "rotation 0 1 0 90", 
+            "scale 0.2", 
+            "rescale_normal"
+        ], 
+        "Programs": [ 
+            "body1 fvtm:rgb_primary", 
+            "wingl_col fvtm:rgb_primary", 
+            "mord_col fvtm:rgb_primary", 
+            "wingr_col fvtm:rgb_primary", 
+            "body1 fvtm:bind_texture d33lib:textures/model/paint.png", 
+            "bl d33:col 135 135 135", 
+            "reshet d33:col 135 135 135", 
+            "dno fvtm:bind_texture d33ford:textures/model/cv_under.png", 
+            "motor_ver fvtm:bind_texture d33ford:textures/model/cv_ext.png", 
+            "motor fvtm:bind_texture d33lib:textures/model/eng2105.png"
+        ]
+    }, 
+    "SwivelPoints": { 
+        "cv_trunk": { 
+            "parent": "vehicle", 
+            "pos": [ -0.0, -1.22375, 2.03125 ], 
+            "movers": [ 
+                { 
+                    "attribute": "cv_trunk", 
+                    "var": "pitch", 
+                    "speed": 3, 
+                    "bool_based": true, 
+                    "min": 0, 
+                    "max": 60
+                }
+            ]
+        }
+    }, 
+    "ID": "cr_victoria", 
+    "ColorChannels": { 
+        "primary": "#545245", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:seats": "d33ford:cv_seats", 
+        "right_front_wheel": "d33ford:cv_cr_wheel", 
+        "left_front_wheel": "d33ford:cv_cr_wheel", 
+        "right_back_wheel": "d33ford:cv_cr_wheel", 
+        "left_back_wheel": "d33ford:cv_cr_wheel", 
+        "vehicle:s:vehicle_partslots:steering_wheel:1": "d33ford:cv_steer", 
+        "vehicle:bumper_front": "d33ford:cv_bumf", 
+        "vehicle:bumper_rear": "d33ford:cv_bumr", 
+        "vehicle:hood": "d33ford:cv_hood", 
+        "vehicle:lights": "d33ford:cv_lights", 
+        "vehicle:trunk": "d33ford:cv_trunk", 
+        "vehicle:doors": "d33ford:cv_doors", 
+        "vehicle:s:vehicle_partslots:engine:0": "d33lib:engine_fmod46", 
+        "vehicle:transmission": "gep:transmission"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 2.7, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "ID": "d33porsche",
+  "Name": "D33 PORSCHE",
+  "URL": "https://www.curseforge.com/minecraft/mc-mods/d33-porsche-package",
+  "License": "http://fexcraft.net/license?id=mods",
+  "Dependencies": [ "gep", "d33lib" ],
+  "Authors": [
+    "MaximD33"
+  ],
+  "Version": "1.0",
+  "CreativeTabs":[]
+}

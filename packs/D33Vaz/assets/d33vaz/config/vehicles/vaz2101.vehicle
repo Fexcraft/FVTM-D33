@@ -1,0 +1,109 @@
+{ 
+    "Addon": "d33vaz", 
+    "Name": "VAZ 2101", 
+    "Model": "body_color;salon_color;under_color;reshet;gluh;body_chrome1;body_chrome;torpeda_chrome1;salon_chrome;pered_chrome;body_grey;baraban;torpeda_pol;torpeda_black2_torpeda_chrome;torpeda_black;body_ark;uplot1;salon_black;uplot;uplotn;arki;pered_black;torpeda_lea;pol;torpeda_black1;pol1;under_black;pruzin;dno;torpeda_derev;melochi_tex;melochi_tex1;torpeda_salon;torpeda_tex1;dvigatel;kozir;sidushki;potol;logo;d33vaz:models/vehicle/vaz2101.obj", 
+    "CreativeTab": "d33lib:vehicles", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 976
+        }
+    }, 
+    "Category": "car,sedan", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.34375, 
+            "steering": true, 
+            "pos": [ -0.75, 0.375, -1.775 ]
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.34375, 
+            "steering": true, 
+            "pos": [ 0.75, 0.375, -1.775 ], 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.34375, 
+            "pos": [ -0.71875, 0.375, 1.25 ], 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.34375, 
+            "pos": [ 0.71875, 0.375, 1.25 ], 
+            "mirror": true, 
+            "powered": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -0.8125, 
+            0.3125, 
+            -1.125, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -0.8125, 
+            0.3125, 
+            0.625, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            0.8125, 
+            0.3125, 
+            -1.125, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            0.8125, 
+            0.3125, 
+            0.625, 
+            "right_front"
+        ]
+    }, 
+    "PartSlots": { 
+        "engine": [ 
+            -0.0, 
+            0.395, 
+            -1.425, 
+            "engine"
+        ], 
+        "license_plate_rear": [ 
+            -0.0, 
+            0.7375, 
+            2.4, 
+            "license_plate", 
+            4, 
+            [ 0, 180, 6.6 ]
+        ], 
+        "steering_wheel": {}, 
+        "seats": {}
+    }, 
+    "ID": "vaz2101", 
+    "ColorChannels": { 
+        "primary": "#E78C33", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:seats": "d33vaz:v01_seats", 
+        "right_front_wheel": "d33vaz:circlerect_wheel", 
+        "left_front_wheel": "d33vaz:circlerect_wheel", 
+        "right_back_wheel": "d33vaz:circlerect_wheel", 
+        "left_back_wheel": "d33vaz:circlerect_wheel", 
+        "vehicle:s:vehicle_partslots:steering_wheel:2": "d33vaz:v01_steer", 
+        "vehicle:bumper_front": "d33vaz:v01_bumf", 
+        "vehicle:bumper_rear": "d33vaz:v01_bumr", 
+        "vehicle:doors": "d33vaz:v01_doors", 
+        "vehicle:mirror": "d33vaz:v01_mirror", 
+        "vehicle:hood": "d33vaz:v01_hood", 
+        "vehicle:lights": "d33vaz:v01_lights", 
+        "vehicle:trunk": "d33vaz:v01_trunk", 
+        "vehicle:s:vehicle_partslots:engine:0": "d33lib:engine_2105", 
+        "vehicle:transmission": "gep:transmission"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.4, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }
+}

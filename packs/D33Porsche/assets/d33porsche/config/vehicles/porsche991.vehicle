@@ -1,0 +1,94 @@
+{ 
+    "Addon": "d33porsche", 
+    "Name": "Porsche 911 Carrera S", 
+    "Model": "exhaust_ext;chassis_ext;body_ext;body_col;glass_f_bl;glass_l_bl;glass_r_bl;glass_r_bl1;inter_int;d33porsche:textures/model/porsche991.obj", 
+    "CreativeTab": "d33lib:vehicles", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1380
+        }
+    }, 
+    "Category": "car, coupe", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.375, 
+            "steering": true, 
+            "pos": [ -0.64375, 0.325, -1.3875 ]
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.375, 
+            "steering": true, 
+            "pos": [ 0.64375, 0.325, -1.3875 ], 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.375, 
+            "pos": [ -0.675, 0.325, 1.24375 ], 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.375, 
+            "pos": [ 0.675, 0.325, 1.24375 ], 
+            "mirror": true, 
+            "powered": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -0.6875, 
+            0.125, 
+            -0.6875, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -0.6875, 
+            0.125, 
+            0.875, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            0.6875, 
+            0.125, 
+            -0.6875, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            0.6875, 
+            0.125, 
+            0.875, 
+            "right_front"
+        ]
+    }, 
+    "ID": "porsc991", 
+    "ColorChannels": { 
+        "primary": "#661717", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:seats": "d33porsche:p991_seats", 
+        "right_front_wheel": "d33porsche:p991_wheel", 
+        "left_front_wheel": "d33porsche:p991_wheel", 
+        "right_back_wheel": "d33porsche:p991_wheel", 
+        "left_back_wheel": "d33porsche:p991_wheel", 
+        "vehicle:steering_wheel": "d33porsche:p991_steer", 
+        "vehicle:bumper_front": "d33porsche:p991_bumf", 
+        "vehicle:bumper_rear": "d33porsche:p991_bumr", 
+        "vehicle:hood": "d33porsche:p991_hood", 
+        "vehicle:lights": "d33porsche:p991_lights", 
+        "vehicle:trunk": "d33porsche:p991_trunk", 
+        "vehicle:doors": "d33porsche:p991_doors", 
+        "vehicle:engine": "gep:engine_petrol", 
+        "vehicle:transmission": "gep:transmission"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 2.88, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }, 
+    "PartSlots": { 
+        "seats": {}, 
+        "steering_wheel": {}
+    }
+}

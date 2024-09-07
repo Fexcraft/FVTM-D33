@@ -1,0 +1,141 @@
+{ 
+    "Addon": "d33chevrolet", 
+    "Name": "Chevrolet Camaro III", 
+    "CreativeTab": "d33lib:vehicles", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1450
+        }
+    }, 
+    "Category": "car,coupe", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ -0.85, 0.3625, -1.725 ]
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ 0.85, 0.3625, -1.725 ], 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ -0.85, 0.3625, 1.5375 ], 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ 0.85, 0.3625, 1.5375 ], 
+            "mirror": true, 
+            "powered": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -0.6875, 
+            0.1875, 
+            -0.875, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -0.6875, 
+            0.1875, 
+            0.875, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            0.6875, 
+            0.1875, 
+            -0.875, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            0.6875, 
+            0.1875, 
+            0.875, 
+            "right_front"
+        ]
+    }, 
+    "PartSlots": { 
+        "engine": [ 
+            -0.0, 
+            0.3025, 
+            -1.339375, 
+            "engine"
+        ], 
+        "steering_wheel": {}, 
+        "license_plate_rear": [ 
+            -0.0, 
+            0.886875, 
+            2.704375, 
+            "license_plate", 
+            4, 
+            [ 0, 180, -5.01 ]
+        ], 
+        "seats": {}
+    }, 
+    "Model": "col;wing_rf_col;wing_lf_col;wing_rf_1;bak;zercin;bl;bl1;blm;wing_lf_bl;wing_rf_bl;luk;wipers;colins;zerc;wing_lf_ext;wing_rf_ext;ext;pol;carpet;pumbas;rad;int;eng_int;motor;d33chevrolet:textures/model/camaro3.obj", 
+    "ModelData": { 
+        "Transforms": [ 
+            "rotation 0 0 1 180", 
+            "rotation 0 1 0 90", 
+            "scale 0.2", 
+            "rescale_normal"
+        ], 
+        "Programs": [ 
+            "col fvtm:rgb_primary", 
+            "wing_rf_col fvtm:rgb_primary", 
+            "wing_lf_col fvtm:rgb_primary", 
+            "wing_rf_1 fvtm:rgb_primary", 
+            "col fvtm:bind_texture d33lib:textures/model/paint.png", 
+            "bak d33:col 230 230 230", 
+            "zercin d33:col 25 25 25", 
+            "bl d33:col 25 25 25", 
+            "bl1 d33:col 25 25 25", 
+            "blm d33:col 25 25 25", 
+            "wing_lf_bl d33:col 25 25 25", 
+            "wing_rf_bl d33:col 25 25 25", 
+            "luk d33:col 25 25 25", 
+            "wipers d33:col 25 25 25", 
+            "colins fvtm:bind_texture d33chevrolet:textures/model/camaro_by_azrael.png", 
+            "zerc fvtm:bind_texture d33lib:textures/model/camaro_exterior.png", 
+            "colins fvtm:bind_texture d33chevrolet:textures/model/camaro_by_azrael.png", 
+            "pol fvtm:bind_texture d33chevrolet:textures/model/denx_kovrolin.png", 
+            "carpet fvtm:bind_texture d33chevrolet:textures/model/denx_tkan.png", 
+            "motor fvtm:bind_texture d33lib:textures/model/gm_engine.png", 
+            "pumbas fvtm:bind_texture d33lib:textures/model/camaro_pumbars.png", 
+            "int fvtm:bind_texture d33chevrolet:textures/model/w220_leather.png", 
+            "rad fvtm:bind_texture d33chevrolet:textures/model/radiator.png"
+        ], 
+        "FlipV": true
+    }, 
+    "ID": "camaro3", 
+    "ColorChannels": { 
+        "primary": "#0D0D0D", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:seats": "d33chevrolet:cam3_seats", 
+        "right_front_wheel": "d33chevrolet:irocz_cr_wheel", 
+        "left_front_wheel": "d33chevrolet:irocz_cr_wheel", 
+        "right_back_wheel": "d33chevrolet:irocz_cr_wheel", 
+        "left_back_wheel": "d33chevrolet:irocz_cr_wheel", 
+        "vehicle:s:vehicle_partslots:steering_wheel:1": "d33chevrolet:cam3_steer", 
+        "vehicle:bumper_front": "d33chevrolet:cam3_bumf", 
+        "vehicle:bumper_rear": "d33chevrolet:cam3_bumr", 
+        "vehicle:doors": "d33chevrolet:cam3_doors", 
+        "vehicle:hood": "d33chevrolet:cam3_hood", 
+        "vehicle:trunk": "d33chevrolet:cam3_trunk", 
+        "vehicle:s:vehicle_partslots:engine:0": "d33lib:engine_lb9", 
+        "vehicle:transmission": "gep:transmission"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 2.84, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }
+}
