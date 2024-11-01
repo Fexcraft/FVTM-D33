@@ -1,0 +1,16 @@
+{ 
+    "Transforms": [ 
+        "rotation 0 0 1 180", 
+        "rotation 0 1 0 90", 
+        "scale 0.2", 
+        "rescale_normal"
+    ], 
+    "FlipAxes": false, 
+    "FlipV": true, 
+    "Programs": [ 
+        "eng2105 fvtm:bind_texture d33lib:textures/model/eng2105.png"
+    ], 
+    "MaterialDict": { 
+        "________________": "d33lib:textures/model/eng2105.png"
+    }
+}

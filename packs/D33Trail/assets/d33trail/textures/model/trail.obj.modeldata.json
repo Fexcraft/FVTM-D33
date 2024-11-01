@@ -1,0 +1,8 @@
+{ 
+    "Transforms": [ 
+        "scale 0.0625", 
+        "scale 0.25", 
+        "rescale_normal"
+    ], 
+    "FlipV": true
+}

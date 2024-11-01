@@ -1,0 +1,23 @@
+{ 
+    "Transforms": [ 
+        "scale 0.0625", 
+        "scale 0.25", 
+        "rescale_normal"
+    ], 
+    "FlipV": true, 
+    "Programs": [ 
+        "main_col fvtm:rgb_primary", 
+        "mirrors fvtm:rgb_primary", 
+        "main_col fvtm:bind_texture d33lib:textures/model/paint.png", 
+        "podsteer fvtm:bind_texture d33rolls:textures/model/inter1.png", 
+        "froseat fvtm:bind_texture d33rolls:textures/model/inter1.png", 
+        "steer fvtm:bind_texture d33rolls:textures/model/inter1.png", 
+        "dver_cr fvtm:bind_texture d33rolls:textures/model/exter.png", 
+        "steer d33:steer 0 -32.927 89.163 -19.615 24.244"
+    ], 
+    "MaterialDict": { 
+        "colored": "d33lib:textures/model/paint.png", 
+        "__________": "d33rolls:textures/model/exter.png", 
+        "Dash": "d33rolls:textures/model/inter1.png"
+    }
+}
